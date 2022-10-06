@@ -14,7 +14,7 @@ public class GreaterThenTheirRightOptimal {
         if (arr == null && arr.length == 0){
             return;
         }
-        Stack<Integer> stack = new Stack<>(); //10,6,
+        Stack<Integer> stack = new Stack<>();
 
         for (int value : arr){
 
