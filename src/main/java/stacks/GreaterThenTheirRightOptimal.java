@@ -11,7 +11,7 @@ public class GreaterThenTheirRightOptimal {
     }
     public static void find(Integer[]arr){
 
-        if (arr == null && arr.length == 0){
+        if (arr == null || arr.length == 0){
             return;
         }
         Stack<Integer> stack = new Stack<>();
