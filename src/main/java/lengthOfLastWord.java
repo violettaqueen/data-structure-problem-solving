@@ -2,7 +2,7 @@ public class lengthOfLastWord {
 
     public static void main(String[] args) {
 
-        String sentence = "word   ";
+        String sentence = "Hello world  ";
         System.out.println(lengthOfLastWordOfString(sentence));
     }
 
@@ -24,4 +24,6 @@ public class lengthOfLastWord {
         }
         return length;
     }
+
+
 }
