@@ -1,6 +1,6 @@
 package queue;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class TimeNeededToBuyTickets {
 
@@ -31,4 +31,5 @@ public class TimeNeededToBuyTickets {
         }
         return list.size();
     }
+
 }
