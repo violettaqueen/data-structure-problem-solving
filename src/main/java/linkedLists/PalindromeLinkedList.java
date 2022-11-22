@@ -2,7 +2,12 @@ package linkedLists;
 
 public class PalindromeLinkedList {
 
+    ListNode head;
+    ListNode tail;
+    int size;
+
     public static boolean isPalindrome(ListNode head) {
+
 
         /*
          * create stack
