@@ -10,7 +10,7 @@ public class FirstRepeatingCharacterSet {
         Set<Character> characters = new HashSet<>(); //random
 
         for (Character ch : str.toCharArray()){
-            if (!characters.add(ch)){
+            if (!characters.add(ch)){ //if there is a duplicated character
                 return ch;
             }
         }
