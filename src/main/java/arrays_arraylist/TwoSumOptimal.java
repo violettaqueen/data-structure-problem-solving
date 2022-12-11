@@ -6,8 +6,8 @@ public class TwoSumOptimal {
 
     public static void main(String[] args) {
 
-        int[] nums = new int[]{2,7,11,5};
-        int target = 9;
+        int[] nums = new int[]{16,3,11,5,15};
+        int target = 8;
 
         System.out.println(Arrays.toString(twoSum(nums, target)));
     }
