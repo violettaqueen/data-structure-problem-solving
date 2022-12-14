@@ -6,11 +6,11 @@ public class TwoSumTwoPointer2 {
 
     public static void main(String[] args) {
 
-        int[] array = {16,3,11,5, 15}; //8
+        int[] array = {16,3, 10,5, 15}; //8
         //7
         Arrays.sort(array); //3, 5, 11, 15, 16 != 8
         //p2    p1
-        int target = 8;
+        int target = 15;
         int p1 = 2;
         int p2 = 0;
 
@@ -24,10 +24,12 @@ public class TwoSumTwoPointer2 {
 
         while (array[p2] > target){
             p2--;
-
-            if (array[p1] + array[p2] == target){
-                return new int[]{array[p1], array[p2]};
+            for (int i = 0; i <= p2; i++) {
+                if (array[p1] + array[p2] == target){
+                    return new int[]{array[p1], array[p2]};
+                }
             }
+
         }
 
        return new int[]{};
