@@ -50,13 +50,35 @@ public class MySinglyLinkedList {
 
     public void deleteFront(ListNode head) {
 
+        if (isEmpty()) System.out.println("List is empty");
+
         ListNode current = head;
 
-        if (isEmpty()) {
-            System.out.println("List is empty");
-        } else {
-            current.next = null;
+        while (current != null){
+            if (current==head){
+                head = current.next;
+                current.next = null;
+                size--;
+            }
         }
-        size--;
+       current= current.next;
+
     }
+    public void printLinkedList(){
+
+        ListNode current = head;
+        while (current != null){
+            if (current.next == null){
+                System.out.println(current.value + "=> null");
+            }else{
+                System.out.println(current.value + "=>");
+            }
+            current = current.next;
+        }
+
+
+    }
+
+
+
 }
