@@ -9,8 +9,8 @@ public class MoveAllZerosToTheEnd {
     public static void main(String[] args) {
 
         List<Integer> list = new ArrayList<>(Arrays.asList(1,0,3,0,2,0,1));
-        int originalSize = list.size();
-        list.removeAll(Arrays.asList(0));
+        int originalSize = list.size();  //7
+        list.removeAll(Arrays.asList(0)); //
         int newSize = list.size();
         int totalNumberOfZeros = originalSize - newSize;
 
