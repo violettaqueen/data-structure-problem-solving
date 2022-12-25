@@ -4,6 +4,9 @@ public class ExpressionBalance {
 
     public static void main(String[] args) {
 
+        String exr = "(A+B){W}";
+        System.out.println(isBalanced(exr));
+
     }
 
     public static boolean isBalanced(String expr) {
@@ -13,7 +16,7 @@ public class ExpressionBalance {
         for (int i = 0; i < expr.length(); i++) {
             char ch = expr.charAt(i);
 
-            if (ch != '(' && ch != ')' && ch != '{' && ch != '}' && ch != '[' && ch != ']') return false;
+            if (ch != '(' && ch != ')' && ch != '{' && ch != '}' && ch != '[' && ch != ']') continue;
 
             if (ch == '(' || ch == '{' || ch == '[') {
                 myStack.push(ch);
