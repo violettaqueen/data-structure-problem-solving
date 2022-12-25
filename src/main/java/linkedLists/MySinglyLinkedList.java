@@ -19,8 +19,9 @@ public class MySinglyLinkedList {
         } else {
             tail.next = newNode;
             tail = newNode;
+            size++;
         }
-        size++;
+
     }
 
     public void insertFirst(int data) {
