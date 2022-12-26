@@ -28,8 +28,8 @@ public class MoveAllZerosToEndArray {
         int k=0;
         for(int i=0;i<nums.length;i++){
             if(nums[i]!=0){
-                int temp=nums[k];
-                nums[k]=nums[i];
+                int temp=nums[k]; // kth element of nums arr
+                nums[k]=nums[i];  //1
                 nums[i]= temp;
                 k++;
             }
